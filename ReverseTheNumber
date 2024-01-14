@@ -1,0 +1,9 @@
+#reverse a given integer
+a = int(input())
+word = str(a)
+j = len(word)-1
+b = ""
+while(j>=0):
+    b+=word[j]
+    j-=1
+print(int(b))

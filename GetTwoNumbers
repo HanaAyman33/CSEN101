@@ -1,0 +1,10 @@
+#gets two number A & B,given their multiplication and differnece
+import random
+multi = int(input())
+diff = int(input())
+a = random.randint(diff,multi)
+b = random.randint(diff,multi)
+while((a*b)!=multi and a-b!=diff):
+    a = random.randint(diff,multi)
+    b = random.randint(diff,multi)
+print("A = "+str(a)+",B = "+str(b))

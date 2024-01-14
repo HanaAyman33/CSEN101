@@ -1,0 +1,9 @@
+#roll two dices till they are equal
+import random
+a = random.randint(1,6)
+b = random.randint(1,6)
+while(a!=b):
+    a = random.randint(1,6)
+    b = random.randint(1,6)
+print("They are equal!")
+print(a)

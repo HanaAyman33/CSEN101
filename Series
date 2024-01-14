@@ -1,0 +1,8 @@
+#calculate the series(sum) till this number
+n = int(input())
+product = 1
+i = 2
+while(i<=n):
+    product+=(i*i)
+    i+=1
+print(product)

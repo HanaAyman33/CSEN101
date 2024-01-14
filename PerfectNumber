@@ -1,0 +1,13 @@
+#checks if the given number is perfect or not
+#perfect=> sum of divisors of the number equal to this number
+n = int(input())
+i = 1
+sum = 0
+while(i<n):
+    if(n%i==0):
+        sum+=i
+    i+=1
+if(sum==n):
+    print("the number is perfect")
+else:
+    print("the number isn't perfect")

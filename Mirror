@@ -1,0 +1,21 @@
+#given two numbers,check if the first is a mirror to the second
+a = int(input())
+b = int(input())
+A = str(a)
+B = str(b)
+i = 0
+j = len(B)-1
+if(len(A)!=len(B)):
+    print("NO")
+else:
+    flag = True
+    while(i<len(A) and j>=0):
+        if(A[i]!=B[j]):
+            flag = False
+            break
+        i+=1
+        j-=1
+    if(flag):
+        print("YES")
+    else:
+        print("NO")

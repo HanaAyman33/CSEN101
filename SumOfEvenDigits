@@ -1,0 +1,10 @@
+#given an integer,get the sum of even digits
+n = int(input())
+N = str(n)
+sum = 0
+for i in range(len(N)):
+    tmp = int(N[i])
+    if(tmp%2==0):
+        sum+=tmp
+    i+=1
+print(sum)

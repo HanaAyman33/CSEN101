@@ -1,0 +1,10 @@
+#given a positive integer,return the largest digit
+a = int(input())
+tmp = str(a)
+i = 0
+m = 0
+while(i<len(tmp)):
+    n = int(tmp[i])
+    m = max(m,n)
+    i+=1
+print(m)

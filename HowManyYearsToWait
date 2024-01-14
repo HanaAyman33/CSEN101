@@ -1,0 +1,9 @@
+#A bank is offering an annual compound interest of 5%. Write an algorithm that tells you how many years
+#you need to wait in order to reach a balance of y dollars, given your current balance.
+balance = int(input())
+target = int(input())
+i = 0
+while(balance<target):
+    balance+=(balance*0.5)
+    i+=1
+print(i)

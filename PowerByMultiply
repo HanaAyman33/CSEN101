@@ -1,0 +1,10 @@
+#given two integers a and b, return a raiswed to the power of b
+a = int(input())
+b = int(input())
+#print(math.pow(a,b))
+product = a
+i = 1
+while(i<b):
+    product*=a
+    i+=1
+print(product)
