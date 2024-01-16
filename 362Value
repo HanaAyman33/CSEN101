@@ -1,0 +1,13 @@
+#given the list of integers,return if the list contains the 362 value
+a = eval(input())
+if(len(a)<3):
+    print(False)
+else:
+    i = 0
+    flag = False
+    while(i+2<len(a)):
+        if(a[i]==(a[i+1]-3) and a[i+2]==(a[i]-1)):
+            flag = True
+            break
+        i+=1
+    print(flag)

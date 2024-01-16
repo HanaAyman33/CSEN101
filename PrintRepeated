@@ -1,0 +1,15 @@
+#given an ordered(sorted list),print out the repeated numbers
+a = eval(input())
+n = len(a)
+i = 0
+flag = False
+while(i+1<n):
+    if(a[i]!=a[i+1]):
+       if(flag):
+            print(a[i])
+            flag = False
+    else:
+        flag = True
+    i+=1
+if(flag):
+    print(a[i])

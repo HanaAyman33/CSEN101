@@ -1,0 +1,12 @@
+#given a list,get the sum of all elements in even indices and product of odd indices
+a = eval(input())
+i = 0
+sum = 0
+product = 1
+while(i<len(a)):
+    if(i%2==0):
+        sum+=a[i]
+    else:
+        product*=a[i]
+    i+=1
+print("Sum: ",sum,"Prod: ",product)

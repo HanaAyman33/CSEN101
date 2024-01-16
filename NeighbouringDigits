@@ -1,0 +1,19 @@
+# a)given an integer,get the number of digits having the same neighbouring digits
+#a = int(input())
+#cnt = 0
+#while(a>9):
+  #  x = a%10
+  #  a//=10
+  #  y = a%10
+   # if(x==y):
+   #     cnt+=1
+#print(cnt)
+#b)given a list , do the same
+b = eval(input())
+cnt = 0
+i = 0
+while i<len(b)-1:
+    if(b[i]==b[i+1]):
+        cnt+=1
+    i+=1
+print(cnt)
