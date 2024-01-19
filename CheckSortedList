@@ -1,0 +1,9 @@
+#given a list,check if it's sorted or not
+A = eval(input())
+flag = True
+for i in range(0,len(A)-1):
+    if(A[i]>A[i+1]):
+        flag = False
+        break
+    i+=1
+print(flag)

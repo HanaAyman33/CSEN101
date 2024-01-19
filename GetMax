@@ -1,0 +1,9 @@
+#given a list,return the maximum number
+A = eval(input())
+Max = 0
+for i in range (0,len(A)):
+   # Max = max(Max,A[i])
+    if(Max<A[i]):
+        Max = A[i]
+    i+=1
+print(Max)

@@ -1,0 +1,13 @@
+#given a list and an integer,print the # of occurrences of the integer and positions of occurrences
+A = eval(input())
+x = int(input())
+b = []
+cnt = 0
+for i in range(0,len(A)):
+    if(A[i]==x):
+        b+=[i]
+        cnt+=1
+    i+=1
+if(cnt>0):
+    print(x," occurs in the following positions:",b)
+print("The number of occurrences of",x,"is",cnt)
