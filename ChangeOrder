@@ -1,0 +1,16 @@
+#Write an algorithm that given a list of integers A moves all even elements in a list of integers to the front
+#of the list and all odd elements to the rear
+A = eval(input())
+B = [0]*len(A)
+i = 0
+j = len(A)-1
+k = 0
+while(k<len(A)):
+    if(A[k]%2==0):
+        B[i] = A[k]
+        i+=1
+    else:
+        B[j] = A[k]
+        j-=1
+    k+=1
+print(B)

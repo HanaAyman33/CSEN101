@@ -1,0 +1,17 @@
+A = eval(input())
+x = int(input())
+B = []
+i = 0
+while(i<len(A)):
+    if(A[i]<x):
+        B+=[A[i]]
+        i+=1
+    elif(x==A[i]):
+        B+=[x]
+        B+=A[i]
+        i+=1
+    else:
+        B+=[x]
+print(B)
+
+    
